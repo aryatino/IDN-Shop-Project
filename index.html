@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IDN-Shop</title>
+    <link rel="stylesheet" href="src/style.css" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="shadow-sm py-4 bg-white">
+      <div class="container flex items-center justify-between">
+        <!-- logo -->
+        <a href="index.html">
+          <img src="public/images/logo.svg" alt="logo" />
+        </a>
+
+        <!-- search bar -->
+        <div class="w-full max-w-xl flex relative">
+          <span class="absolute left-4 top-3 text-xl text-gray-400">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+          <input
+            class="border w-full border-primary border-r-0 py-3 pl-12 pr-3 rounded-l-md focus:outline-none"
+            type="text"
+            placeholder="Search"
+          />
+          <button
+            class="bg-primary px-8 text-white rounded-r-md hover:bg-white hover:border border-primary hover:text-primary"
+          >
+            Search
+          </button>
+        </div>
+
+        <!-- icons -->
+        <div class="flex space-x-4">
+          <a
+            href=""
+            class="text-gray-700 hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="text-xs leading-3">Whishlist</div>
+            <span
+              class="absolute bg-primary rounded-full text-white flex items-center justify-center w-5 h-5 right-3 -top-1"
+              >8</span
+            >
+          </a>
+          <a
+            href=""
+            class="text-gray-700 hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div class="text-xs leading-3">Keranjang</div>
+            <span
+              class="absolute bg-primary rounded-full text-white flex items-center justify-center w-5 h-5 right-5 -top-1"
+              >8</span
+            >
+          </a>
+          <a
+            href=""
+            class="text-gray-700 hover:text-primary transition relative"
+          >
+            <div class="text-2xl">
+              <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="text-xs leading-3">Account</div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- navbar -->
+    <nav class="bg-gray-800">
+      <div class="container flex">
+        <!-- all categories -->
+        <div class="bg-primary text-white px-8 py-4 cursor-pointer relative group">
+          <span class="mr-2"><i class="fa-solid fa-bars"></i></span>
+          <span class="capitalize">All Categories</span>
+          <!-- dropdown -->
+           <div class="bg-white -200 py-3 absolute w-full top-full left-0 shadow divide-y divide-gray-200 opacity-0 group-hover:opacity-100 transition duration-300 invisible group-hover:visible">
+            <!-- single category -->
+            <a href="" class="flex px-6 py-3 hover:bg-gray-100 transition">
+              <img class="w-5 h-5 object-contain" src="public/images/icons/sofa.svg" alt="">
+              <span class="ml-6 text-gray-600 text-sm capitalize">Sofa</span>
+            </a>
+            <a href="" class="flex px-6 py-3 hover:bg-gray-100 transition">
+              <img class="w-5 h-5 object-contain" src="public/images/icons/phone.svg" alt="">
+              <span class="ml-6 text-gray-600 text-sm capitalize">Smartphone</span>
+            </a>
+            <a href="" class="flex px-6 py-3 hover:bg-gray-100 transition">
+              <img class="w-5 h-5 object-contain" src="public/images/icons/office.svg" alt="">
+              <span class="ml-6 text-gray-600 text-sm capitalize">Office</span>
+            </a>
+            <a href="" class="flex px-6 py-3 hover:bg-gray-100 transition">
+              <img class="w-5 h-5 object-contain" src="public/images/icons/terrace.svg" alt="">
+              <span class="ml-6 text-gray-600 text-sm capitalize">Terrace</span>
+            </a>
+            <a href="" class="flex px-6 py-3 hover:bg-gray-100 transition">
+              <img class="w-5 h-5 object-contain" src="public/images/icons/restaurant.svg" alt="">
+              <span class="ml-6 text-gray-600 text-sm capitalize">Restaurant</span>
+            </a>
+            <a href="" class="flex px-6 py-3 hover:bg-gray-100 transition">
+              <img class="w-5 h-5 object-contain" src="public/images/icons/delivery-van.svg" alt="">
+              <span class="ml-6 text-gray-600 text-sm capitalize">Delivery</span>
+            </a>
+            <!-- single category end -->
+           </div>
+        </div>
+        <!-- all categories end -->
+        <!-- nav links -->
+        <div class="flex items-center justify-between flex-grow">
+          <div class="pl-12 flex items-center space-x-6">
+            <a class="text-gray-300 hover:text-white" href="">Beranda</a>
+            <a class="text-gray-300 hover:text-white" href="">Belanja</a>
+            <a class="text-gray-300 hover:text-white" href="">Tentang Kami</a>
+            <a class="text-gray-300 hover:text-white" href="">Kontak Kami</a>
+          </div>
+          <div class="space-x-6">
+            <a class="text-gray-300 hover:text-white" href="">Login</a>
+            <a class="text-gray-300 hover:text-white" href="">Register</a>
+          </div>
+        </div>
+        <!-- nav links end -->
+      </div>
+    </nav>
+    <!-- navbar end -->
+  </body>
+</html>
