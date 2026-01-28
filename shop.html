@@ -8,12 +8,26 @@
     <link rel="stylesheet" href="src/style.css" />
 
     <!-- fontawesome -->
+    <!-- font awesome -->
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      href="https://site-assets.fontawesome.com/releases/v7.0.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-thin.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-regular.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v7.0.1/css/sharp-light.css"
     />
   </head>
   <body>
@@ -157,7 +171,7 @@
         </div>
         <!-- all categories end -->
         <!-- nav links -->
-        <div class="flex items-center justify-between flex-grow">
+        <div class="flex items-center justify-between grow">
           <div class="pl-12 flex items-center space-x-6">
             <a class="text-gray-300 hover:text-white" href="index.html"
               >Beranda</a
@@ -198,82 +212,839 @@
     </div>
 
     <!-- shop wrapper -->
-     <div class="container grid grid-cols-4 pt-4 pb-16 gap-6 items-start">
-        <!-- sidebar -->
-         <div class="col-span-1 bg-white shadow-sm rounded px-4 pb-6 overflow-hidden">
-            <div class="divide-y divide-gray-200">
-                <!-- category filter -->
-                 <div class="py-5">
-                    <h3 class="uppercase text-xl text-gray-800 mb-3">categories</h3>
-                    <div class="space-y-2">
-                        <!-- single category  -->
-                         <div class="flex items-center">
-                            <input class="text-primary focus:ring-0 rounded-sm cursor-pointer" type="checkbox" id="cat-1">
-                            <label class="ml-3 capitalize text-gray-600 cursor-pointer" for="cat-1">sofa</label>
-                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
-                         </div>
-                        <!-- single category end  -->
-                        <!-- single category  -->
-                         <div class="flex items-center">
-                            <input class="text-primary focus:ring-0 rounded-sm cursor-pointer" type="checkbox" id="cat-2">
-                            <label class="ml-3 capitalize text-gray-600 cursor-pointer" for="cat-2">bedroom</label>
-                            <div class="ml-auto text-gray-600 text-sm">(32)</div>
-                         </div>
-                        <!-- single category end  -->
-                        <!-- single category  -->
-                         <div class="flex items-center">
-                            <input class="text-primary focus:ring-0 rounded-sm cursor-pointer" type="checkbox" id="cat-3">
-                            <label class="ml-3 capitalize text-gray-600 cursor-pointer" for="cat-3">Outdoor</label>
-                            <div class="ml-auto text-gray-600 text-sm">(24)</div>
-                         </div>
-                        <!-- single category end  -->
-                        <!-- single category  -->
-                         <div class="flex items-center">
-                            <input class="text-primary focus:ring-0 rounded-sm cursor-pointer" type="checkbox" id="cat-4">
-                            <label class="ml-3 capitalize text-gray-600 cursor-pointer" for="cat-4">terrace</label>
-                            <div class="ml-auto text-gray-600 text-sm">(19)</div>
-                         </div>
-                        <!-- single category end  -->
-                    </div>
-                 </div>
-                <!-- category filter end -->
-                <!-- brands filter -->
-                 <div class="py-5">
-                    <h3 class="uppercase text-xl text-gray-800 mb-3">brands</h3>
-                    <div class="space-y-2">
-                        <!-- single brands  -->
-                         <div class="flex items-center">
-                            <input class="text-primary focus:ring-0 rounded-sm cursor-pointer" type="checkbox" id="brands-1">
-                            <label class="ml-3 capitalize text-gray-600 cursor-pointer" for="brands-1">nike</label>
-                            <div class="ml-auto text-gray-600 text-sm">(54)</div>
-                         </div>
-                        <!-- single brands end  -->
-                        <!-- single brands  -->
-                         <div class="flex items-center">
-                            <input class="text-primary focus:ring-0 rounded-sm cursor-pointer" type="checkbox" id="brands-2">
-                            <label class="ml-3 capitalize text-gray-600 cursor-pointer" for="brands-2">roughneck</label>
-                            <div class="ml-auto text-gray-600 text-sm">(23)</div>
-                         </div>
-                        <!-- single brands end  -->
-                        <!-- single brands  -->
-                         <div class="flex items-center">
-                            <input class="text-primary focus:ring-0 rounded-sm cursor-pointer" type="checkbox" id="brands-3">
-                            <label class="ml-3 capitalize text-gray-600 cursor-pointer" for="brands-3">adidas</label>
-                            <div class="ml-auto text-gray-600 text-sm">(32)</div>
-                         </div>
-                        <!-- single brands end  -->
-                    </div>
-                 </div>
-                <!-- brands filter end -->
+    <div class="container grid grid-cols-4 pt-4 pb-16 gap-6 items-start">
+      <!-- sidebar -->
+      <div
+        class="col-span-1 bg-white shadow-sm rounded px-4 pb-6 overflow-hidden"
+      >
+        <div class="divide-y divide-gray-200">
+          <!-- category filter -->
+          <div class="py-5">
+            <h3 class="uppercase text-xl text-gray-800 mb-3">categories</h3>
+            <div class="space-y-2">
+              <!-- single category  -->
+              <div class="flex items-center">
+                <input
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                  type="checkbox"
+                  id="cat-1"
+                />
+                <label
+                  class="ml-3 capitalize text-gray-600 cursor-pointer"
+                  for="cat-1"
+                  >sofa</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(15)</div>
+              </div>
+              <!-- single category end  -->
+              <!-- single category  -->
+              <div class="flex items-center">
+                <input
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                  type="checkbox"
+                  id="cat-2"
+                />
+                <label
+                  class="ml-3 capitalize text-gray-600 cursor-pointer"
+                  for="cat-2"
+                  >bedroom</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(32)</div>
+              </div>
+              <!-- single category end  -->
+              <!-- single category  -->
+              <div class="flex items-center">
+                <input
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                  type="checkbox"
+                  id="cat-3"
+                />
+                <label
+                  class="ml-3 capitalize text-gray-600 cursor-pointer"
+                  for="cat-3"
+                  >Outdoor</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(24)</div>
+              </div>
+              <!-- single category end  -->
+              <!-- single category  -->
+              <div class="flex items-center">
+                <input
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                  type="checkbox"
+                  id="cat-4"
+                />
+                <label
+                  class="ml-3 capitalize text-gray-600 cursor-pointer"
+                  for="cat-4"
+                  >terrace</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(19)</div>
+              </div>
+              <!-- single category end  -->
             </div>
-         </div>
-        <!-- sidebar end -->
-         <!-- products -->
-          <div class="col-span-3 bg-blue-500 h-500"></div>
-         <!-- products end -->
-     </div>
+          </div>
+          <!-- category filter end -->
+          <!-- brands filter -->
+          <div class="py-5">
+            <h3 class="uppercase text-xl text-gray-800 mb-3">brands</h3>
+            <div class="space-y-2">
+              <!-- single brands  -->
+              <div class="flex items-center">
+                <input
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                  type="checkbox"
+                  id="brands-1"
+                />
+                <label
+                  class="ml-3 capitalize text-gray-600 cursor-pointer"
+                  for="brands-1"
+                  >nike</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(54)</div>
+              </div>
+              <!-- single brands end  -->
+              <!-- single brands  -->
+              <div class="flex items-center">
+                <input
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                  type="checkbox"
+                  id="brands-2"
+                />
+                <label
+                  class="ml-3 capitalize text-gray-600 cursor-pointer"
+                  for="brands-2"
+                  >roughneck</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(23)</div>
+              </div>
+              <!-- single brands end  -->
+              <!-- single brands  -->
+              <div class="flex items-center">
+                <input
+                  class="text-primary focus:ring-0 rounded-sm cursor-pointer"
+                  type="checkbox"
+                  id="brands-3"
+                />
+                <label
+                  class="ml-3 capitalize text-gray-600 cursor-pointer"
+                  for="brands-3"
+                  >adidas</label
+                >
+                <div class="ml-auto text-gray-600 text-sm">(32)</div>
+              </div>
+              <!-- single brands end  -->
+            </div>
+          </div>
+          <!-- brands filter end -->
+          <!-- price filter -->
+          <div class="py-5">
+            <h3 class="uppercase text-xl text-gray-800 mb-3">price</h3>
+            <div class="mt-4 flex items-center">
+              <input
+                class="w-full border-gray-300 focus:border-primary focus:ring-0 text-gray-800 rounded-sm shadow text-sm"
+                type="text"
+                placeholder="min"
+              />
+              <span class="text-gray-500">-</span>
+              <input
+                class="w-full border-gray-300 focus:border-primary focus:ring-0 text-gray-800 rounded-sm shadow text-sm"
+                type="text"
+                placeholder="max"
+              />
+            </div>
+          </div>
+          <!-- price filter end -->
+          <!--size filter -->
+          <div class="py-5">
+            <h3 class="uppercase text-xl text-gray-800 mb-3">size</h3>
+            <div class="mt-4 flex items-center gap-4">
+              <!-- single filter -->
+              <div class="size-selector">
+                <input type="radio" name="size" class="hidden" id="xs" />
+                <label
+                  class="border border-gray-200 w-6 h-6 text-xs rounded-sm flex justify-center items-center cursor-pointer uppercase"
+                  for="xs"
+                  >XS</label
+                >
+              </div>
+              <!-- single filter end -->
+              <!-- single filter -->
+              <div class="size-selector">
+                <input type="radio" name="size" class="hidden" id="s" />
+                <label
+                  class="border border-gray-200 w-6 h-6 text-xs rounded-sm flex justify-center items-center cursor-pointer uppercase"
+                  for="s"
+                  >S</label
+                >
+              </div>
+              <!-- single filter end -->
+              <!-- single filter -->
+              <div class="size-selector">
+                <input type="radio" name="size" class="hidden" id="m" />
+                <label
+                  class="border border-gray-200 w-6 h-6 text-xs rounded-sm flex justify-center items-center cursor-pointer uppercase"
+                  for="m"
+                  >m</label
+                >
+              </div>
+              <!-- single filter end -->
+              <!-- single filter -->
+              <div class="size-selector">
+                <input type="radio" name="size" class="hidden" id="lg" />
+                <label
+                  class="border border-gray-200 w-6 h-6 text-xs rounded-sm flex justify-center items-center cursor-pointer uppercase"
+                  for="lg"
+                  >lg</label
+                >
+              </div>
+              <!-- single filter end -->
+              <div class="size-selector">
+                <input type="radio" name="size" class="hidden" id="xl" />
+                <label
+                  class="border border-gray-200 w-6 h-6 text-xs rounded-sm flex justify-center items-center cursor-pointer uppercase"
+                  for="xl"
+                  >xl</label
+                >
+              </div>
+              <!-- single filter end -->
+            </div>
+          </div>
+          <!--size filter end -->
+          <!--color filter -->
+          <div class="py-5">
+            <h3 class="uppercase text-xl text-gray-800 mb-3">color</h3>
+            <div class="mt-4 flex items-center gap-2">
+              <!-- single color -->
+              <div class="color-selector">
+                <input type="radio" id="red" class="hidden" />
+                <label
+                  for="red"
+                  class="border border-gray-200 w-5 h-5 block bg-primary rounded-sm shadow-sm cursor-pointer"
+                ></label>
+              </div>
+              <!-- single color end -->
+              <!-- single color -->
+              <div class="color-selector">
+                <input type="radio" id="black" class="hidden" />
+                <label
+                  for="black"
+                  class="border border-gray-200 w-5 h-5 block bg-black rounded-sm shadow-sm cursor-pointer"
+                ></label>
+              </div>
+              <!-- single color end -->
+              <!-- single color -->
+              <div class="color-selector">
+                <input type="radio" id="teal" class="hidden" />
+                <label
+                  for="teal"
+                  class="border border-gray-200 w-5 h-5 block bg-teal-500 rounded-sm shadow-sm cursor-pointer"
+                ></label>
+              </div>
+              <!-- single color end -->
+              <!-- single color -->
+              <div class="color-selector">
+                <input type="radio" id="yellow" class="hidden" />
+                <label
+                  for="yellow"
+                  class="border border-gray-200 w-5 h-5 block bg-yellow-300 rounded-sm shadow-sm cursor-pointer"
+                ></label>
+              </div>
+              <!-- single color end -->
+            </div>
+          </div>
+          <!--color filter end -->
+        </div>
+      </div>
+      <!-- sidebar end -->
+      <!-- products -->
+      <div class="col-span-3">
+        <!-- sorting -->
+        <div class="flex items-center">
+          <select name="" id="" class="w-44 text-sm rounded-sm px-4 py-3 text-gray-800 focus:ring-primary focus:border-primary shadow-sm">
+            <option value="">Default Sorting</option>
+            <option value="">Price low-hight</option>
+            <option value="">Price hight-low</option>
+            <option value="">Latest product</option>
+          </select>
+          <div class="ml-auto flex gap-2">
+            <a class="border border-gray-300 rounded flex justify-center items-center w-10 h-10 text-white bg-primary cursor-pointer" href="">
+              <i class="fa-solid fa-grid"></i>
+            </a>
+            <a class="border border-gray-300 rounded flex justify-center items-center w-10 h-10 text-gray-600 cursor-pointer" href="">
+              <i class="fa-solid fa-list"></i>
+            </a>
+          </div>
+        </div>
+        <!-- sorting end -->
+         <!-- product wrapper -->
+          <div class="grid grid-cols-3 gap-6 items-start mt-6">
+        <!-- single product -->
+        <div class="shadow-md rounded-md overflow-hidden bg-white group">
+          <!-- product image -->
+          <div class="relative">
+            <img
+              class="w-full"
+              src="public/images/products/product1.jpg"
+              alt=""
+            />
+            <div
+              class="absolute inset-0 flex justify-center items-center gap-3 bg-black/40 opacity-0 hover:opacity-100 transition duration-300"
+            >
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- product image end -->
+          <!-- product content-->
+          <div class="px-4 pt-4 pb-3">
+            <a href="">
+              <h4
+                class="uppercase font-medium text-xl text-gray-800 hover:text-primary"
+              >
+                Modern Sofa Minimalis 
+              </h4>
+            </a>
+            <div class="mt-2flex items-baseline space-x-2 mb-1 font-roboto">
+              <p class="text-xl text-primary font-semibold">Rp 150.000</p>
+              <p class="text-sm text-gray-400 italic line-through">
+                Rp 200.000
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="text-yellow-400 gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="text-gray-300 text-xs">(146)</div>
+            </div>
+            <div></div>
+          </div>
+          <a
+            class="bg-primary w-full block py-1 text-center text-white border border-primary rounded-b-md hover:bg-transparent hover:text-primary transition"
+            href=""
+            >Tambah Ke Keranjang</a
+          >
+          <!-- product content end-->
+        </div>
+        <!-- single product end -->
+        <!-- single product -->
+        <div class="shadow-md rounded-md overflow-hidden bg-white group">
+          <!-- product image -->
+          <div class="relative">
+            <img
+              class="w-full"
+              src="public/images/products/product2.jpg"
+              alt=""
+            />
+            <div
+              class="absolute inset-0 flex justify-center items-center gap-3 bg-black/40 opacity-0 hover:opacity-100 transition duration-300"
+            >
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- product image end -->
+          <!-- product content-->
+          <div class="px-4 pt-4 pb-3">
+            <a href="">
+              <h4
+                class="uppercase font-medium text-xl text-gray-800 hover:text-primary"
+              >
+                Sofa Couple
+              </h4>
+            </a>
+            <div class="mt-2flex items-baseline space-x-2 mb-1 font-roboto">
+              <p class="text-xl text-primary font-semibold">Rp Rp 780.000</p>
+              <p class="text-sm text-gray-400 italic line-through">
+                Rp 1.250.600
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="text-yellow-400 gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="text-gray-300 text-xs">(540)</div>
+            </div>
+            <div></div>
+          </div>
+          <a
+            class="bg-primary w-full block py-1 text-center text-white border border-primary rounded-b-md hover:bg-transparent hover:text-primary transition"
+            href=""
+            >Tambah Ke Keranjang</a
+          >
+          <!-- product content end-->
+        </div>
+        <!-- single product end -->
+    
+        
+        <!-- single product -->
+        <div class="shadow-md rounded-md overflow-hidden bg-white group">
+          <!-- product image -->
+          <div class="relative">
+            <img
+              class="w-full"
+              src="public/images/products/product5.jpg"
+              alt=""
+            />
+            <div
+              class="absolute inset-0 flex justify-center items-center gap-3 bg-black/40 opacity-0 hover:opacity-100 transition duration-300"
+            >
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- product image end -->
+          <!-- product content-->
+          <div class="px-4 pt-4 pb-3">
+            <a href="">
+              <h4
+                class="uppercase font-medium text-xl text-gray-800 hover:text-primary"
+              >
+                Meja Makan Keluarga
+              </h4>
+            </a>
+            <div class="mt-2flex items-baseline space-x-2 mb-1 font-roboto">
+              <p class="text-xl text-primary font-semibold">Rp 470.000</p>
+              <p class="text-sm text-gray-400 italic line-through">
+                Rp 650.000
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="text-yellow-400 gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="text-gray-300 text-xs">(1000+)</div>
+            </div>
+            <div></div>
+          </div>
+          <a
+            class="bg-primary w-full block py-1 text-center text-white border border-primary rounded-b-md hover:bg-transparent hover:text-primary transition"
+            href=""
+            >Tambah Ke Keranjang</a
+          >
+          <!-- product content end-->
+        </div>
+        <!-- single product end -->
+        <!-- single product -->
+        <div class="shadow-md rounded-md overflow-hidden bg-white group">
+          <!-- product image -->
+          <div class="relative">
+            <img
+              class="w-full"
+              src="public/images/products/product4.jpg"
+              alt=""
+            />
+            <div
+              class="absolute inset-0 flex justify-center items-center gap-3 bg-black/40 opacity-0 hover:opacity-100 transition duration-300"
+            >
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- product image end -->
+          <!-- product content-->
+          <div class="px-4 pt-4 pb-3">
+            <a href="">
+              <h4
+                class="uppercase font-medium text-xl text-gray-800 hover:text-primary"
+              >
+                Springbed Luxury
+              </h4>
+            </a>
+            <div class="mt-2flex items-baseline space-x-2 mb-1 font-roboto">
+              <p class="text-xl text-primary font-semibold">Rp 4.300.000</p>
+              <p class="text-sm text-gray-400 italic line-through">
+                Rp 5.670.000
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="text-yellow-400 gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="text-gray-300 text-xs">(67)</div>
+            </div>
+            <div></div>
+          </div>
+          <a
+            class="bg-primary w-full block py-1 text-center text-white border border-primary rounded-b-md hover:bg-transparent hover:text-primary transition"
+            href=""
+            >Tambah Ke Keranjang</a
+          >
+          <!-- product content end-->
+        </div>
+        <!-- single product end -->
+        <!-- single product -->
+        <div class="shadow-md rounded-md overflow-hidden bg-white group">
+          <!-- product image -->
+          <div class="relative">
+            <img
+              class="w-full"
+              src="public/images/products/product6.jpg"
+              alt=""
+            />
+            <div
+              class="absolute inset-0 flex justify-center items-center gap-3 bg-black/40 opacity-0 hover:opacity-100 transition duration-300"
+            >
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- product image end -->
+          <!-- product content-->
+          <div class="px-4 pt-4 pb-3">
+            <a href="">
+              <h4
+                class="uppercase font-medium text-xl text-gray-800 hover:text-primary"
+              >
+                Kursi Duduk Minimalis (nyaman untuk berbagai usia)
+              </h4>
+            </a>
+            <div class="mt-2flex items-baseline space-x-2 mb-1 font-roboto">
+              <p class="text-xl text-primary font-semibold">Rp 230.000</p>
+              <p class="text-sm text-gray-400 italic line-through">
+                Rp 410.000
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="text-yellow-400 gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="text-gray-300 text-xs">(67)</div>
+            </div>
+            <div></div>
+          </div>
+          <a
+            class="bg-primary w-full block py-1 text-center text-white border border-primary rounded-b-md hover:bg-transparent hover:text-primary transition"
+            href=""
+            >Tambah Ke Keranjang</a
+          >
+          <!-- product content end-->
+        </div>
+        <!-- single product end -->
+        <!-- single product -->
+        <div class="shadow-md rounded-md overflow-hidden bg-white group">
+          <!-- product image -->
+          <div class="relative">
+            <img
+              class="w-full"
+              src="public/images/products/product14.jpg"
+              alt=""
+            />
+            <div
+              class="absolute inset-0 flex justify-center items-center gap-3 bg-black/40 opacity-0 hover:opacity-100 transition duration-300"
+            >
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- product image end -->
+          <!-- product content-->
+          <div class="px-4 pt-4 pb-3">
+            <a href="">
+              <h4
+                class="uppercase font-medium text-xl text-gray-800 hover:text-primary"
+              >
+                Sony Alpha 9 Mark iii flagship mirrorless camera (global shutter technology)
+              </h4>
+            </a>
+            <div class="mt-2flex items-baseline space-x-2 mb-1 font-roboto">
+              <p class="text-xl text-primary font-semibold">Rp 90.500.000</p>
+              <p class="text-sm text-gray-400 italic line-through">
+                Rp 99.789.000
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="text-yellow-400 gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="text-gray-300 text-xs">(7)</div>
+            </div>
+            <div></div>
+          </div>
+          <a
+            class="bg-primary w-full block py-1 text-center text-white border border-primary rounded-b-md hover:bg-transparent hover:text-primary transition"
+            href=""
+            >Tambah Ke Keranjang</a
+          >
+          <!-- product content end-->
+        </div>
+        <!-- single product end -->
+        <!-- single product -->
+        <div class="shadow-md rounded-md overflow-hidden bg-white group">
+          <!-- product image -->
+          <div class="relative">
+            <img
+              class="w-full"
+              src="public/images/products/product13.jpg"
+              alt=""
+            />
+            <div
+              class="absolute inset-0 flex justify-center items-center gap-3 bg-black/40 opacity-0 hover:opacity-100 transition duration-300"
+            >
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- product image end -->
+          <!-- product content-->
+          <div class="px-4 pt-4 pb-3">
+            <a href="">
+              <h4
+                class="uppercase font-medium text-xl text-gray-800 hover:text-primary"
+              >
+               dji mavic air 2 fly more combo (bnob)
+              </h4>
+            </a>
+            <div class="mt-2flex items-baseline space-x-2 mb-1 font-roboto">
+              <p class="text-xl text-primary font-semibold">Rp 12.340.000</p>
+              <p class="text-sm text-gray-400 italic line-through">
+                Rp 15.230.000
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="text-yellow-400 gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="text-gray-300 text-xs">(89)</div>
+            </div>
+            <div></div>
+          </div>
+          <a
+            class="bg-primary w-full block py-1 text-center text-white border border-primary rounded-b-md hover:bg-transparent hover:text-primary transition"
+            href=""
+            >Tambah Ke Keranjang</a
+          >
+          <!-- product content end-->
+        </div>
+        <!-- single product end -->
+        <!-- single product -->
+        <div class="shadow-md rounded-md overflow-hidden bg-white group">
+          <!-- product image -->
+          <div class="relative">
+            <img
+              class="w-full"
+              src="public/images/products/product12.jpg"
+              alt=""
+            />
+            <div
+              class="absolute inset-0 flex justify-center items-center gap-3 bg-black/40 opacity-0 hover:opacity-100 transition duration-300"
+            >
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- product image end -->
+          <!-- product content-->
+          <div class="px-4 pt-4 pb-3">
+            <a href="">
+              <h4
+                class="uppercase font-medium text-xl text-gray-800 hover:text-primary"
+              >
+               meja pajangan minimalis untuk ruang tamu
+              </h4>
+            </a>
+            <div class="mt-2flex items-baseline space-x-2 mb-1 font-roboto">
+              <p class="text-xl text-primary font-semibold">Rp 210.500</p>
+              <p class="text-sm text-gray-400 italic line-through">
+                Rp 460.000
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="text-yellow-400 gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="text-gray-300 text-xs">(160)</div>
+            </div>
+            <div></div>
+          </div>
+          <a
+            class="bg-primary w-full block py-1 text-center text-white border border-primary rounded-b-md hover:bg-transparent hover:text-primary transition"
+            href=""
+            >Tambah Ke Keranjang</a
+          >
+          <!-- product content end-->
+        </div>
+        <!-- single product end -->
+        <!-- single product -->
+        <div class="shadow-md rounded-md overflow-hidden bg-white group">
+          <!-- product image -->
+          <div class="relative">
+            <img
+              class="w-full"
+              src="public/images/products/product11.jpg"
+              alt=""
+            />
+            <div
+              class="absolute inset-0 flex justify-center items-center gap-3 bg-black/40 opacity-0 hover:opacity-100 transition duration-300"
+            >
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <a
+                class="w-9 h-9 bg-primary text-white flex justify-center items-center rounded-full hover:bg-gray-800"
+                href=""
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+            </div>
+          </div>
+          <!-- product image end -->
+          <!-- product content-->
+          <div class="px-4 pt-4 pb-3">
+            <a href="">
+              <h4
+                class="uppercase font-medium text-xl text-gray-800 hover:text-primary"
+              >
+               springbed augusta luxury brand
+              </h4>
+            </a>
+            <div class="mt-2flex items-baseline space-x-2 mb-1 font-roboto">
+              <p class="text-xl text-primary font-semibold">Rp 12.340.000</p>
+              <p class="text-sm text-gray-400 italic line-through">
+                Rp 16.430.000
+              </p>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="text-yellow-400 gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+              </div>
+              <div class="text-gray-300 text-xs">(289)</div>
+            </div>
+            <div></div>
+          </div>
+          <a
+            class="bg-primary w-full block py-1 text-center text-white border border-primary rounded-b-md hover:bg-transparent hover:text-primary transition"
+            href=""
+            >Tambah Ke Keranjang</a
+          >
+          <!-- product content end-->
+        </div>
+        <!-- single product end -->
+      </div>
+         <!-- product wrapper end -->
+      </div>
+      <!-- products end -->
+    </div>
     <!-- shop wrapper end -->
-
 
     <!-- breadcumb end -->
     <!-- footer -->
